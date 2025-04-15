@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Audio Alert Selector",
+    "version": "1.5",
+    "permissions": ["storage"],
+    "host_permissions": ["*://*.glia.com/*", "*://*.glia.eu/*"],
+    "background": {},
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.glia.com/*", "*://*.glia.eu/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }

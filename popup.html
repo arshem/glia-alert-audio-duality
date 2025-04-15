@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Output Selector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>🔊 Select Playback Device</h2>
+    <button id="requestPermission">Grant Access</button>
+    <select id="deviceSelect" disabled>
+        <option value="default">Default Output</option>
+    </select>
+    <button id="testAudio">🎵 Test Sound</button> <!-- ✅ Test Button is always rendered -->
+    <script src="popup.js"></script>
+</body>
+</html>
